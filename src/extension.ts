@@ -5,6 +5,9 @@ import { Logger } from "./common/logger";
 import { ExercismController } from "./exercism/controller";
 import { TracksTreeProvider } from "./views/tree/tracksTreeProvider";
 
+
+vscode.commands.executeCommand('setContext', 'listAutomaticKeyboardNavigation', true);
+
 export function activate(context: vscode.ExtensionContext): void {
   ExtensionManager.initialize(context);
 
